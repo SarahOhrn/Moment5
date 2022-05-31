@@ -16,11 +16,10 @@ $sql = "DROP TABLE IF EXISTS courses;
 );";
 
 
-
-//Skriv ut sql-frågan
+//Print out the SQL query
 echo "<pre>$sql</pre>";
 
-//Skicka sql till DB
+//Send sql query to DB
 if($db->multi_query($sql)){
     echo "<p>Tabeller installerade.</p>";
 
